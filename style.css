@@ -1,0 +1,87 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #174d63;
+}
+
+.clicker {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 400px;
+	height: 450px;
+	padding: 40px 20px;
+	gap: 60px;
+	margin: auto;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	background-color: #f5f5f5;
+	border-radius: 25px;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+h1 {
+	font-weight: 400;
+}
+
+.clicker__count {
+	font-size: 96px;
+}
+
+.clicker__body {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.clicker__btns {
+	display: flex;
+	gap: 15px;
+	button {
+		max-width: 100%;
+		cursor: pointer;
+	}
+}
+
+.clicker__btn {
+	padding: 15px 50px;
+	border-radius: 10px;
+	border: none;
+	font-size: 14px;
+	color: #fff;
+	background-color: #0bc6ff;
+}
+
+.clicker__up {
+	padding: 15px 50px;
+	border-radius: 10px;
+	border: none;
+	font-size: 14px;
+	color: #fff;
+	background-color: #ff9d0b;
+	&:disabled {
+		cursor: default;
+		background-color: #fcddaf;
+	}
+}
+
+.push {
+	max-width: 800px;
+	padding: 10px 0;
+	margin: 40px auto;
+	text-align: center;
+	background-color: #14f183;
+	border-radius: 15px;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.d-n {
+	display: none;
+}
